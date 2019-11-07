@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation selectAppIndex={setAppIndex}/>
+      <Navigation selectAppIndex={setAppIndex} appIndex={appIndex}/>
       {(appIndex === 1 && <PhotoOfDayApp />)}
       {(appIndex === 2 && <EarthDataApp />)}
     </div>
