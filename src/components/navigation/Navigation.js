@@ -1,11 +1,11 @@
 import React from 'react';
 import "../../App.css";
 
-function Navigation(){
+function Navigation(props){
     return(
         <div className='nav' style={{background:'lightgrey', height:'50px', display:'flex', justifyContent:'center', alignItems:'center'}}>
-            <button style={{margin:'0 50px'}}>Photo of the Day</button>
-            <button style={{margin:'0 50px'}}>Other API</button>
+            <button onClick={() => props.selectAppIndex(1)} style={{margin:'0 50px'}}>Photo of the Day</button>
+            <button onClick={() => props.selectAppIndex(2)} style={{margin:'0 50px'}}>Earth Satellite Viewer</button>
         </div>
     );
 }

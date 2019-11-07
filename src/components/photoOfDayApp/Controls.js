@@ -1,9 +1,9 @@
 import React from 'react';
-import "../App.css";
+import "../../App.css";
 
 function Controls(props){
     return(
-        <div className='controls' style={{marginBottom:'200px'}}>
+        <div className='controls' style={{marginBottom:'20px'}}>
             <form>
                 <input type='date' onInput={event => props.setDate(event.target.value)}/>
             </form>
