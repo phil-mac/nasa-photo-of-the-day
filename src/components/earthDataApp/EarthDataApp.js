@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import SatPicCard from './SatPicCard';
+import {Button} from 'reactstrap';
 
 import "../../App.css";
 
@@ -24,7 +25,8 @@ function EarthDataApp() {
       <h1>Earth Satellite Image Viewer</h1>
       {/* <Controls setDate={setDateState}/> */}
       <div>
-          <button onClick={() => setCoordState(coordState + 0.02)} style={{margin:"30px"}}>--></button>
+        <Button color="danger">Danger!</Button>
+        <button onClick={() => setCoordState(coordState + 0.02)} style={{margin:"30px"}}>--></button>
       </div>
       <div>
         <SatPicCard photoData={photosState}/>
