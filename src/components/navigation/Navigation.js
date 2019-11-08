@@ -31,13 +31,9 @@ const NasaNavbar = styled.div`
         border-radius: 20px;
         box-shadow: 5px 5px 5px grey;
         background:lightgrey;
+        outline: none; 
 
         transition: transform 0.3s;
-
-        outline: none;
-
-        
-        
     }
     .normal{
         &:hover{
@@ -76,10 +72,13 @@ function Navigation(props){
             <NavItem style={{fontSize:'1.6rem', marginLeft:'50px'}}>
               <NavLink onClick={() => props.selectAppIndex(2)}>Earth Satellite Viewer</NavLink>
             </NavItem>
+            <NavItem style={{fontSize:'1.6rem', marginLeft:'50px'}}>
+              <NavLink onClick={() => props.selectAppIndex(3)}>Material UI Stuff</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
-      <NasaNavbar className='nav'>
+      {/* <NasaNavbar className='nav'>
           <div className='contents'>
           <div href="/" style={{fontSize:'3rem'}}>
             <img 
@@ -94,7 +93,7 @@ function Navigation(props){
                 <button onClick={() => props.selectAppIndex(2)} className={props.appIndex === 2 ? 'clickedButton' : 'normal'}>Earth Satellite Viewer</button>
             </nav>
           </div>
-      </NasaNavbar>
+      </NasaNavbar> */}
     </div>
     
   );
